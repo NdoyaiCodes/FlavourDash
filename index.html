@@ -20,8 +20,7 @@
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
 
-          <a href="#"
-            class="font-philosopher text-xl font-semibold tracking-widest uppercase rounded-lg text-black focus:outline-none focus:shadow-outline">Flavour Dash</a>
+          <a href="#hero" class="font-philosopher text-xl font-semibold tracking-widest uppercase rounded-lg text-black focus:outline-none focus:shadow-outline">Flavour Dash</a>
           <button class="text-black rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <svg x-show="!open" fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
               <path fill-rule="evenodd"
@@ -31,25 +30,28 @@
             <svg x-show="open" fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
               <path fill-rule="evenodd"
                 d="M6.707 5.293a1 1 0 011.414 0L10 8.586l1.293-1.293a1 1 0 011.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414zM5.293 14.707a1 1 0 010-1.414L8.586 10l-1.293-1.293a1 1 0 111.414-1.414L10 8.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414L8.586 8.586l-1.293-1.293a1 1 0 011.414-1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 011.414 1.414l-2 2a1 1 0 000 1.414l2 2z"
-                clip-rule="evenodd"></path>
+                clip-rule="evenodd"> </path>
             </svg>
           </button>
 
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
-          class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+          class="font-philosopher flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
           <!-- Navigation links -->
-          <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
-            href="#">Blog</a>
-          <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
-            href="#">About</a>
-          <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
-            href="#">Contact</a>
-          <a class="px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
+          
+          <a class="font-philosopher px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
+            href="about.html">About</a>
+            <a class="font-philosopher px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
+            href="#blog">Blog</a>
+            <a class="font-philosopher px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
+            href="#pricing">Pricing</a>
+          <a class="font-philosopher px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
+            href="#contact">Contact</a>
+          <a class="font-philosopher px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
             href="login.html">Login</a>
           <div @click.away="open = false" class="relative z-50" x-data="{ open: false }">
             <button @click="open = !open"
-              class="flex flex-row bg-purple-400 items-center w-full px-4 py-2 mt-2 text-lg font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent text-black md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none">
+              class="font-philosopher flex flex-row bg-purple-400 items-center w-full px-4 py-2 mt-2 text-lg font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent text-black md:w-auto md:inline md:mt-0 md:ml-4 focus:outline-none">
               <span>More</span>
               <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -72,8 +74,8 @@
                       </svg>
                     </div>
                     <div class="ml-3">
-                      <p class="font-semibold">Intergrations</p>
-                      <p class="text-sm">Secure and seamless transactions</p>
+                      <p class="font-philosopher font-semibold">Intergrations</p>
+                      <p class="font-philosopher text-sm">Secure and seamless transactions</p>
                     </div>
                   </a>
 
@@ -87,8 +89,8 @@
                       </svg>
                     </div>
                     <div class="ml-3">
-                      <p class="font-semibold">Analytics</p>
-                      <p class="text-sm">Take a look at your statistics</p>
+                      <p class="font-philosopher font-semibold">Analytics</p>
+                      <p class="font-philosopher text-sm">Take a look at your statistics</p>
                     </div>
                   </a>
 
@@ -102,8 +104,8 @@
                       </svg>
                     </div>
                     <div class="ml-3">
-                      <p class="font-semibold">Sign-Up</p>
-                      <p class="text-sm">Create an account</p>
+                      <p class="font-philosopher font-semibold">Sign-Up</p>
+                      <p class="font-philosopher text-sm">Create an account</p>
                     </div>
                   </a>
                 </div>
@@ -117,7 +119,7 @@
   <!-- Header ends here -->
 
   <!--Hero section starts here-->
-  <section section class="mt-16">
+  <section id="hero" class="mt-16">
     <div class="relative overflow-hidden z-0">
       <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48 relative z-99">
         <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
@@ -127,13 +129,9 @@
               of waiting in line becomes a distant memory, ushering in a new era of seamless and efficient experiences.
             </p>
           </div>
-          <a href="#"
+          <a href="login.html"
             class="inline-block rounded-md border border-transparent bg-purple-600 py-2 px-5 text-center font-medium text-white hover:bg-purple-800 mt-6 lg:mt-3">Get
-            Started</a>
-          <a href="#"
-            class="inline-block bg-purple-600 text-white font-bold py-2 px-4 rounded transition duration-300 hover:bg-purple-800">
-            Learn More <span>&rarr;</span>
-          </a>
+            Started <span>&rarr;</span></a>
           <div class="z-0 mt-10 lg:mt-0">
             <!-- Decorative image grid -->
             <div aria-hidden="true"
@@ -188,7 +186,7 @@
         </div>
 
         <div class="lg:py-24">
-          <h1 class="font-philosopher text-center text-5xl font-bold sm:text-m">Who are we?</h1>
+          <h1 class="font-philosopher text-center text-4xl font-bold sm:text-m">Who are we?</h1>
 
           <p class="mt-4 text-1xl">
             We are the future of dining! Discover a modern dining experience with our Smart Menu, allowing you to
@@ -198,6 +196,10 @@
             operational efficiency, and elevate your dining experience to a whole new level with us.
           </p>
 
+          <a href="about.html"
+            class="inline-block bg-purple-600 text-white font-bold mt-5 py-2 px-4 rounded transition duration-300 hover:bg-purple-800">
+            Get to know us <span>&rarr;</span>
+          </a>
         </div>
       </div>
     </div>
@@ -207,61 +209,40 @@
 
 
   <!--Feature Section 1-->
-  <h1 class="font-philosopher text-3xl font-bold mb-8 text-center">Features</h1>
-  <section class="p-4 lg:p-8 feature-section">
-    <div class="feature-component">
-      <div class="container mx-auto space-y-12">
-        <div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-          <img src="Images/qr-code.png" alt="QR CODE" class="h-80 dark:bg-gray-500 aspect-video">
-          <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
-            <h3 class="text-black font-philosopher text-3xl">Scan The QR Code</h3>
-            <p class="my-6 text-black ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam
-              possimus quas, error esse quos.</p>
-            <button type="button" class="self-start text-black">Follow me</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--End of Feature Section 1-->
+  <section id="features">
+  <h1 class="font-philosopher text-4xl font-bold mt-8 mb-8 text-center">Features</h1>
+  <div class="text-center p-8">
 
-  <!--Feature Section 2-->
-  <section class="p-4 lg:p-8 feature-section">
-    <div class="feature-component">
-      <div class="container mx-auto space-y-12">
-        <div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-          <img src="Images/Dessert menu.jpg" alt="MENU" class="h-80 dark:bg-gray-500 aspect-video">
-          <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
-            <h3 class="text-black font-philosopher text-3xl">Create Your Menu</h3>
-            <p class="my-6 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam
-              possimus quas, error esse quos.</p>
-            <button type="button" class="self-start text-black">Follow Me</button>
-          </div>
+    <div class="flex flex-wrap items-center mt-4 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="Images/1366.jpg" alt="gem" class="inline-block rounded shadow-lg border border-merino-400">
         </div>
-      </div>
-    </div>
-  </section>
-  <!--End of Feature Section 2-->
-
-  <!--Feature Section 3-->
-  <section class="p-4 lg:p-8 sfeature-section">
-    <div class="feature-component">
-      <div class="container mx-auto space-y-12">
-        <div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-          <img src="https://source.unsplash.com/640x480/?3" alt="" class="h-80 dark:bg-gray-500 aspect-video">
-          <div class="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
-            <h3 class="font-philosopher  text-black text-3xl">Place Your Order &amp; Wait</h3>
-            <p class="my-6 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam
-              possimus quas, error esse quos.</p>
-            <button type="button" class="self-start">Follow Me</button>
-          </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
+            <h3 class="font-philosopher font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+                Simple Cloud Integration
+            </h3>
+            <p class="font-philosopher sm:text-lg mt-6">
+                Seamlessly integrate Flavour Dash's innovative technology into your digital infrastructure. Effortlessly download and implement our solutions into your existing platforms. Just follow our simple setup process and start enhancing your business operations.
+            </p>
         </div>
-      </div>
     </div>
-  </section>
-  <!--End of Feature Section 3-->
 
-  <!--services section-->
+    <!--Feature Section 2-->
+    <div class="flex flex-wrap items-center mt-20 text-left text-center">
+        <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img src="Images/66104.jpg" alt="project members" class="inline-block rounded shadow-lg border border-merino-400">
+        </div>
+        <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
+            <h3 class="font-philosopher font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+                Effortless Collaboration
+            </h3>
+            <p class="font-philosopher sm:text-lg mt-6">
+                Collaborate effortlessly with Flavour Dash's platform. Invite team members, assign roles, and manage permissions with ease. Our intuitive interface ensures smooth communication and seamless teamwork, allowing you to focus on what matters most – growing your business.
+            </p>
+        </div>
+    </div>
+</div>
+
 <div class="py-6 sm:py-8 lg:py-12">
   <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- text - start -->
@@ -341,6 +322,7 @@
     </div>
   </div>
 </div>
+</section>
 <!--Features section-->
 
 
@@ -373,6 +355,7 @@
   <!--Trusted companies-->
 
   <!--Blog-->
+  <section id="blog">
   <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
     <div class="mx-auto mb-8 max-w-screen-md  lg:mb-12 text-center">
             <h2 class="font-philosopher mb-10 text-4xl font-bold tracking-tight text-black">Savor &amp; Share: Culinary Adventures with Flavour Dash</h2>
@@ -398,7 +381,6 @@
         <a href="#">See All</a>
     </div>
 
-<section id="blog">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
 
         <!-- CARD 1 -->
@@ -560,12 +542,44 @@
         </div>
 
     </div>
-</section>
 </div>
+</section>
   <!--Blog-->
 
+  <!--CTA-->
+  <section class="py-6 bg-gray-100 text-gray-900">
+    <div class="container mx-auto flex flex-col justify-around p-4 text-center md:p-10 lg:flex-row">
+        <div class="flex flex-col justify-center lg:text-left">
+            <p class="font-philosopher mb-1 text-sm font-medium tracking-widest uppercase text-gray-600">Discover the Flavorful Experience</p>
+            <h1 class="font-philosopher py-2 text-3xl font-medium leading-tight title-font">Flavour Dash</h1>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
+            <button class="inline-flex items-center px-6 py-3 rounded-lg bg-gray-600 text-gray-50">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current w-8 h-8 text-gray-50">
+					<path d="M 5.4160156 2.328125 L 12.935547 10.158203 C 13.132547 10.363203 13.45925 10.363203 13.65625 10.158203 L 15.179688 8.5742188 C 15.405688 8.3392188 15.354312 7.956875 15.070312 7.796875 C 11.137313 5.571875 6.2620156 2.811125 5.4160156 2.328125 z M 3.140625 2.8476562 C 3.055625 3.0456562 3 3.2629063 3 3.5039062 L 3 20.591797 C 3 20.788797 3.044375 20.970625 3.109375 21.140625 L 11.576172 12.324219 C 11.762172 12.131219 11.762172 11.826813 11.576172 11.632812 L 3.140625 2.8476562 z M 17.443359 9.2578125 C 17.335484 9.2729375 17.233297 9.32375 17.154297 9.40625 L 15.015625 11.632812 C 14.829625 11.825812 14.829625 12.130219 15.015625 12.324219 L 17.134766 14.529297 C 17.292766 14.694297 17.546141 14.729188 17.744141 14.617188 C 19.227141 13.777188 20.226563 13.212891 20.226562 13.212891 C 20.725562 12.909891 21.007 12.443547 21 11.935547 C 20.992 11.439547 20.702609 10.981938 20.224609 10.710938 C 20.163609 10.676937 19.187672 10.124359 17.763672 9.3183594 C 17.664172 9.2623594 17.551234 9.2426875 17.443359 9.2578125 z M 13.296875 13.644531 C 13.165875 13.644531 13.034047 13.696328 12.935547 13.798828 L 5.4746094 21.566406 C 6.7566094 20.837406 11.328781 18.249578 15.050781 16.142578 C 15.334781 15.981578 15.386156 15.599281 15.160156 15.363281 L 13.65625 13.798828 C 13.55775 13.696328 13.427875 13.644531 13.296875 13.644531 z"></path>
+				</svg>
+				<span class="flex flex-col items-start ml-4 leading-none">
+					<span class="mb-1 text-xs">GET IT ON</span>
+					<span class="font-semibold title-font">Google Play</span>
+				</span>
+			</button>
+            <button class="inline-flex items-center px-5 py-3 rounded-lg bg-gray-600 text-gray-50">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="fill-current w-8 h-8 text-gray-50">
+					<path d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"></path>
+				</svg>
+				<span class="flex flex-col items-start ml-4 leading-none">
+					<span class="mb-1 text-xs">Download on the</span>
+					<span class="font-semibold title-font">App Store</span>
+				</span>
+			</button>
+        </div>
+    </div>
+</section>
+  <!--CTA-->
+
   <!--Pricing-->
-<section>
+<section id="pricing">
 <div class="flex  items-center justify-center">
     <!-- Button 1 -->
     <div class="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
@@ -847,6 +861,7 @@
   <!--Pricing-->
 
   <!--Contact Section-->
+  <section id="contact">
   <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
     <div class="relative py-3 sm:max-w-xl sm:mx-auto">
         <div
@@ -854,7 +869,7 @@
         </div>
         <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
 
-            <div class="text-center pb-6">
+            <div class="font-philosopher text-center pb-6">
                 <h1 class="text-3xl">Contact Us!</h1>
 
                 <p class="text-gray-300">
@@ -882,19 +897,18 @@
 
                 <div class="flex justify-between">
                     <input
-                        class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        class="font-philosopher shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit" value="Send ➤">
                     <input
-                        class="shadow bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        class="font-philosopher shadow bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="reset">
                 </div>
-<a href="https://veilmail.io/e/FkKh7o" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Or click here to reveal our protected email address</a>
-    
             </form>
         </div>
         
     </div>
 </div>
+</section>
   <!--Contact Section-->
 
   <!--Footer-->
@@ -936,7 +950,7 @@
             <!-- social - start -->
             <div class="flex gap-4">
               <a href="#" target="_blank"
-                class="text-black transition duration-100 hover:text-gray-500 active:text-gray-600">
+                class="text-black transition duration-100 hover:text-blue-500 active:text-gray-600">
                 <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -945,7 +959,7 @@
               </a>
 
               <a href="#" target="_blank"
-                class="text-black transition duration-100 hover:text-gray-500 active:text-gray-600">
+                class="text-black transition duration-100 hover:text-blue-500 active:text-gray-600">
                 <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -954,7 +968,7 @@
               </a>
 
               <a href="#" target="_blank"
-                class="text-black transition duration-100 hover:text-gray-500 active:text-gray-600">
+                class="text-black transition duration-100 hover:text-blue-500 active:text-gray-600">
                 <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -963,7 +977,7 @@
               </a>
 
               <a href="#" target="_blank"
-                class="text-black transition duration-100 hover:text-gray-500 active:text-gray-600">
+                class="text-black transition duration-100 hover:text-blue-500 active:text-gray-600">
                 <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -976,27 +990,27 @@
 
           <!-- nav - start -->
           <div>
-            <div class="font-philosopher mb-4 font-bold uppercase tracking-widest text-black">Products</div>
+            <div class="font-philosopher mb-4 font-bold uppercase tracking-widest text-black">Services</div>
 
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Overview</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Overview</a>
               </div>
 
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Solutions</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">How it works</a>
               </div>
 
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Pricing</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Pricing</a>
               </div>
 
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Customers</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Customers</a>
               </div>
             </nav>
           </div>
@@ -1009,15 +1023,15 @@
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">About</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">About</a>
               </div>
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Jobs</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Jobs</a>
               </div>
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Blog</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Blog</a>
               </div>
             </nav>
           </div>
@@ -1030,15 +1044,15 @@
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Contact</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Contact</a>
               </div>
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Chat</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Chat</a>
               </div>
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">FAQ</a>
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">FAQ</a>
               </div>
             </nav>
           </div>
@@ -1051,19 +1065,19 @@
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Terms of
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Terms of
                   Service</a>
               </div>
 
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Privacy
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Privacy
                   Policy</a>
               </div>
 
               <div>
                 <a href="#"
-                  class="text-black transition duration-100 hover:text-yellow-500 active:text-indigo-600">Cookie
+                  class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Cookie
                   settings</a>
               </div>
             </nav>
@@ -1081,34 +1095,22 @@
   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
   <script>
-    // Function to check if an element is in the viewport
-    function isInViewport(element) {
-      var rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
+//smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
 
-    // Function to handle the scroll event
-    function handleScroll() {
-      // Get all feature components
-      var featureComponents = document.querySelectorAll('.feature-component');
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+    const headerHeight = document.querySelector('.header').offsetHeight;
+    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
-      featureComponents.forEach(function (component) {
-        if (isInViewport(component)) {
-          component.classList.add('animate');
-        }
-      });
-    }
-
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Initial check for components in the viewport on page load
-    handleScroll();
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
   </script>
 </body>
 

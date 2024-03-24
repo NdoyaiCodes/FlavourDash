@@ -17,9 +17,3 @@
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.s ease;
 }
-
-/* Animation when the component is in the viewport */
-.feature-component.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
