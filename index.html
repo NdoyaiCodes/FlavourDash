@@ -7,19 +7,15 @@
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap">
-
   <title>FlavourDash</title>
 </head>
-
 <body class="bg-gray-200">
-
   <!-- Header starts here -->
   <div class="header fixed top-0 left-0 right-0 antialiased text-white z-50">
     <div class="w-full text-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
       <div x-data="{ open: false }"
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="flex flex-row items-center justify-between p-4">
-
           <a href="#hero" class="font-philosopher text-xl font-semibold tracking-widest uppercase rounded-lg text-black focus:outline-none focus:shadow-outline">Flavour Dash</a>
           <button class="text-black rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
             <svg x-show="!open" fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -33,12 +29,10 @@
                 clip-rule="evenodd"> </path>
             </svg>
           </button>
-
         </div>
         <nav :class="{'flex': open, 'hidden': !open}"
           class="font-philosopher flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-          <!-- Navigation links -->
-          
+          <!-- Navigation links -->          
           <a class="font-philosopher px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
             href="about.html">About</a>
             <a class="font-philosopher px-4 py-2 mt-2 text-lg font-semibold bg-transparent rounded-lg dark-mode:bg-transparent text-black md:mt-0 md:ml-6 focus:outline-none"
@@ -78,7 +72,6 @@
                       <p class="font-philosopher text-sm">Secure and seamless transactions</p>
                     </div>
                   </a>
-
                   <a class="flex flex-row items-start rounded-lg bg-transparent p-2 dark-mode:bg-transparent hover:text-gray-200 focus:text-white focus:bg-yellow-400 focus:outline-none"
                     href="#">
                     <div class="bg-teal-500 text-white rounded-lg p-3">
@@ -93,7 +86,6 @@
                       <p class="font-philosopher text-sm">Take a look at your statistics</p>
                     </div>
                   </a>
-
                   <a class="flex flex-row items-start rounded-lg bg-transparent p-2 dark-mode:bg-transparent hover:text-gray-200 focus:text-white focus:bg-yellow-400 focus:outline-none"
                     href="sign-up.html">
                     <div class="bg-teal-500 text-white rounded-lg p-3">
@@ -117,7 +109,6 @@
     </div>
   </div>
   <!-- Header ends here -->
-
   <!--Hero section starts here-->
   <section id="hero" class="mt-16">
     <div class="relative overflow-hidden z-0">
@@ -133,7 +124,6 @@
             class="inline-block rounded-md border border-transparent bg-purple-600 py-2 px-5 text-center font-medium text-white hover:bg-purple-800 mt-6 lg:mt-3">Get
             Started <span>&rarr;</span></a>
           <div class="z-0 mt-10 lg:mt-0">
-            <!-- Decorative image grid -->
             <div aria-hidden="true"
               class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl mt-7 lg:pr-8">
               <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
@@ -176,7 +166,6 @@
         </div>
       </div>
     </div>
-
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
         <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-first lg:h-full">
@@ -184,10 +173,8 @@
             src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
             class="absolute inset-0 h-full w-full object-cover" />
         </div>
-
         <div class="lg:py-24">
           <h1 class="font-philosopher text-center text-4xl font-bold sm:text-m">Who are we?</h1>
-
           <p class="mt-4 text-1xl">
             We are the future of dining! Discover a modern dining experience with our Smart Menu, allowing you to
             effortlessly place orders via our website or app or by scanning the QR code at your table. Enjoy the
@@ -195,7 +182,6 @@
             preparation for your meal to be served fresh and delicious. Embrace culinary innovation, relish in
             operational efficiency, and elevate your dining experience to a whole new level with us.
           </p>
-
           <a href="about.html"
             class="inline-block bg-purple-600 text-white font-bold mt-5 py-2 px-4 rounded transition duration-300 hover:bg-purple-800">
             Get to know us <span>&rarr;</span>
@@ -204,15 +190,11 @@
       </div>
     </div>
   </section>
-
   <!--Hero section end here-->
-
-
   <!--Feature Section 1-->
   <section id="features">
   <h1 class="font-philosopher text-4xl font-bold mt-8 mb-8 text-center">Features</h1>
   <div class="text-center p-8">
-
     <div class="flex flex-wrap items-center mt-4 text-left text-center">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
             <img src="Images/1366.jpg" alt="gem" class="inline-block rounded shadow-lg border border-merino-400">
@@ -224,10 +206,11 @@
             <p class="font-philosopher sm:text-lg mt-6">
                 Seamlessly integrate Flavour Dash's innovative technology into your digital infrastructure. Effortlessly download and implement our solutions into your existing platforms. Just follow our simple setup process and start enhancing your business operations.
             </p>
+            <a href="about.html" class="inline-block bg-purple-600 text-white font-bold mt-5 py-2 px-4 rounded transition duration-300 hover:bg-purple-800">
+            know more <span>&rarr;</span>
+            </a>
         </div>
     </div>
-
-    <!--Feature Section 2-->
     <div class="flex flex-wrap items-center mt-20 text-left text-center">
         <div class="w-full md:w-3/5 lg:w-1/2 px-4">
             <img src="Images/66104.jpg" alt="project members" class="inline-block rounded shadow-lg border border-merino-400">
@@ -239,22 +222,20 @@
             <p class="font-philosopher sm:text-lg mt-6">
                 Collaborate effortlessly with Flavour Dash's platform. Invite team members, assign roles, and manage permissions with ease. Our intuitive interface ensures smooth communication and seamless teamwork, allowing you to focus on what matters most – growing your business.
             </p>
+            <a href="about.html" class="inline-block bg-purple-600 text-white font-bold mt-5 py-2 px-4 rounded transition duration-300 hover:bg-purple-800">
+            know more <span>&rarr;</span>
+            </a>
         </div>
     </div>
 </div>
-
 <div class="py-6 sm:py-8 lg:py-12">
   <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
     <!-- text - start -->
     <div class="mb-10 md:mb-16">
       <h2 class="font-philosopher mb-4 text-center text-2xl text-black md:mb-6 lg:text-3xl">What we offer</h2>
-
       <p class="mx-auto max-w-screen-md text-center text-black md:text-lg">Discover the features that enhance your dining experience with us.</p>
     </div>
-    <!-- text - end -->
-
     <div class="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
-      <!-- feature - start -->
       <div class="flex gap-4 md:gap-6">
         <div class="flex h-12 w-12 shrink-0 items-center justify-center"></div>
         <div>
@@ -263,9 +244,6 @@
           <a href="#" class="text-black hover:text-white">More</a>
         </div>
       </div>
-      <!-- feature - end -->
-
-      <!-- feature - start -->
       <div class="flex gap-4 md:gap-6">
         <div class="flex h-12 w-12 shrink-0 items-center justify-center"></div>
         <div>
@@ -274,9 +252,6 @@
           <a href="#" class="text-black hover:text-white">More</a>
         </div>
       </div>
-      <!-- feature - end -->
-
-      <!-- feature - start -->
       <div class="flex gap-4 md:gap-6">
         <div class="flex h-12 w-12 shrink-0 items-center justify-center"></div>
         <div>
@@ -285,8 +260,6 @@
           <a href="#" class="text-black hover:text-white">More</a>
         </div>
       </div>
-      <!-- feature - end -->
-
       <div class="flex gap-4 md:gap-6">
         <div class="flex h-12 w-12 shrink-0 items-center justify-center"></div>
         <div>
@@ -295,9 +268,6 @@
           <a href="#" class="text-black hover:text-white">More</a>
         </div>
       </div>
-      <!-- feature - end -->
-
-      <!-- feature - start -->
       <div class="flex gap-4 md:gap-6">
         <div class="flex h-12 w-12 shrink-0 items-center justify-center"></div>
         <div>
@@ -306,9 +276,6 @@
           <a href="#" class="text-black hover:text-white">More</a>
         </div>
       </div>
-      <!-- feature - end -->
-
-      <!-- feature - start -->
       <div class="flex gap-4 md:gap-6">
         <div class="flex h-12 w-12 shrink-0 items-center justify-center"></div>
         <div>
@@ -317,20 +284,13 @@
           <a href="#" class="text-black hover:text-white">More</a>
         </div>
       </div>
-      <!-- feature - end -->
-
     </div>
   </div>
 </div>
 </section>
-<!--Features section-->
-
-
-  <!--Trusted companies-->
   <div class="mb-10 md:mb-16">
         <h2 class="font-philosopher mb-4 text-center text-2xl text-black md:mb-6 lg:text-3xl">Our Partners</h2>
         <p class="text-center font-philosopher">These are fictional restaurants and logos created by yours truly</p>
-
   <div class="flex max-w-md lg:max-w-none w-auto lg:w-full flex-wrap items-center justify-center lg:justify-between px-5">
     <div class="m-4 lg:mx-0 w-28 flex items-center justify-center">
         <img src="Images/Sponsors/diet.png" alt="Diet Logo" width="85" height="24">
@@ -352,15 +312,11 @@
     </div>
 </div>
   </div>
-  <!--Trusted companies-->
-
-  <!--Blog-->
   <section id="blog">
   <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
     <div class="mx-auto mb-8 max-w-screen-md  lg:mb-12 text-center">
             <h2 class="font-philosopher mb-10 text-4xl font-bold tracking-tight text-black">Savor &amp; Share: Culinary Adventures with Flavour Dash</h2>
         </div>
-
     <div class="border-b mb-5 flex justify-between text-sm">
         <div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
             <svg class="h-6 mr-3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -380,9 +336,7 @@
         </div>
         <a href="#">See All</a>
     </div>
-
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-
         <!-- CARD 1 -->
         <div class="rounded overflow-hidden shadow-lg flex flex-col">
             <a href="#"></a>
@@ -425,7 +379,6 @@
                     </svg>
                     <span class="ml-1">6 mins ago</span>
                 </span>
-
                 <span href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
                     <svg class="h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -477,7 +430,6 @@
                     </svg>
                     <span class="ml-1"> 10 days ago</span>
                 </span>
-
                 <span href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
                     <svg class="h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -529,7 +481,6 @@
                     </svg>
                     <span class="ml-1">16 hours ago</span>
                 </span>
-
                 <span href="#" class="py-1 text-xs font-regular text-gray-900 mr-1 flex flex-row items-center">
                     <svg class="h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -540,12 +491,10 @@
                 </span>
             </div>
         </div>
-
     </div>
 </div>
 </section>
   <!--Blog-->
-
   <!--CTA-->
   <section class="py-6 bg-gray-100 text-gray-900">
     <div class="container mx-auto flex flex-col justify-around p-4 text-center md:p-10 lg:flex-row">
@@ -577,7 +526,6 @@
     </div>
 </section>
   <!--CTA-->
-
   <!--Pricing-->
 <section id="pricing">
 <div class="flex  items-center justify-center">
@@ -590,13 +538,11 @@
             <!-- Pricing Card -->
             <div
                 class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl border border-gray-200 bg-white p-6 text-gray-900 xl:p-8">
-
                 <h3 class="font-philosopher text-lg font-normal">Basic</h3>
                 <div class="my-8 flex items-baseline justify-center ">
                     <span class="font-philosopher mr-2 text-5xl font-extrabold">$29</span>
                     <span class="text-gray-600">/month</span>
                 </div>
-
                 <p class="font-light text-gray-600 sm:text-sm">The perfect choice for individuals and small teams starting out. </p>
                 <a
                     class="cursor-pointer bg-gray-900 w-full rounded-md  p-3 text-center text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
@@ -654,18 +600,14 @@
                         <span>Lifetime updates</span>
                     </li>
                 </ul>
-
             </div>
             <!-- Pricing Card 2-->
-            <div
-                class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl bg-white p-6 text-gray-900 xl:p-8">
-
+            <div class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl bg-white p-6 text-gray-900 xl:p-8">
                 <h3 class="font-philosopher text-lg font-normal ">Essential</h3>
                 <div class="my-8 flex items-baseline justify-center ">
                     <span class="font-philosopher mr-2 text-5xl font-extrabold">$60</span>
                     <span class="text-gray-600">/month</span>
                 </div>
-
                 <p class="font-light text-gray-600 sm:text-sm">Perfect for growing businesses and medium-sized teams.</p>
                 <a
                     class="cursor-pointer bg-gray-900 w-full rounded-md  p-3 text-center text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
@@ -743,18 +685,14 @@
                         <span>Dedicated account manager</span>
                     </li>
                 </ul>
-
             </div>
             <!-- Pricing Card 3-->
-            <div
-                class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl  bg-white p-6 text-center text-gray-900 xl:p-8">
-
+            <div class="mx-auto flex max-w-lg space-y-8 items-start flex-col rounded-3xl  bg-white p-6 text-center text-gray-900 xl:p-8">
                 <h3 class="font-philosopher text-lg font-normal ">Franchises</h3>
                 <div class="my-8 flex items-baseline justify-center ">
                     <span class="font-philosopher mr-2 text-5xl font-extrabold">$149</span>
                     <span class="text-gray-600">/month</span>
                 </div>
-
                 <p class="font-light text-gray-600 sm:text-sm">Tailored for large enterprises and franchises with extensive needs.</p>
                 <a
                     class="cursor-pointer bg-gray-900 w-full rounded-md  p-3  text-sm font-semibold text-white shadow-sm  hover:-translate-y-1">Get
@@ -859,7 +797,6 @@
 </div>
     </section>
   <!--Pricing-->
-
   <!--Contact Section-->
   <section id="contact">
   <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
@@ -868,33 +805,25 @@
             class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
         </div>
         <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
-
             <div class="font-philosopher text-center pb-6">
                 <h1 class="text-3xl">Contact Us!</h1>
-
                 <p class="text-gray-300">
                     Fill up the form below to send us a message.
                 </p>
             </div>
-
        <form action="https://fabform.io/f/{form-id}" method="post">
-
                 <input
                         class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         type="text" placeholder="Name" name="name">
-
                 <input
                         class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         type="email" placeholder="Email" name="email">
-
                 <input
                         class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         type="text" placeholder="Subject" name="_subject">
-
                 <textarea
                         class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         type="text" placeholder="Type your message here..." name="message" style="height: 121px;"></textarea>
-
                 <div class="flex justify-between">
                     <input
                         class="font-philosopher shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -904,13 +833,11 @@
                         type="reset">
                 </div>
             </form>
-        </div>
-        
+        </div>       
     </div>
 </div>
 </section>
   <!--Contact Section-->
-
   <!--Footer-->
   <footer class="pt-4 sm:pt-6 lg:pt-8">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -919,17 +846,14 @@
           <span class="font-philosopher uppercase tracking-widest font-extrabold text-black">Newsletter</span>
           <p class="text-black">Subscribe to our newsletter</p>
         </div>
-
         <form class="flex w-full gap-2 md:max-w-md">
           <input placeholder="Email"
             class="w-full flex-1 rounded border bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 outline-none ring-indigo-300 transition duration-100 focus:ring" />
-
           <button
             class="font-philosopher inline-block rounded bg-blue-400 px-8 py-2 text-center text-sm font-semibold text-black outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Send</button>
         </form>
       </div>
     </div>
-
     <div class="pt-12">
       <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
@@ -943,10 +867,8 @@
               </a>
             </div>
             <!-- logo - end -->
-
             <p class="mb-6 text-black sm:pr-8">Filler text is dummy text which has no meaning however looks very similar
               to real text</p>
-
             <!-- social - start -->
             <div class="flex gap-4">
               <a href="#" target="_blank"
@@ -957,7 +879,6 @@
                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                 </svg>
               </a>
-
               <a href="#" target="_blank"
                 class="text-black transition duration-100 hover:text-blue-500 active:text-gray-600">
                 <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
@@ -966,7 +887,6 @@
                     d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
                 </svg>
               </a>
-
               <a href="#" target="_blank"
                 class="text-black transition duration-100 hover:text-blue-500 active:text-gray-600">
                 <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
@@ -975,7 +895,6 @@
                     d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
-
               <a href="#" target="_blank"
                 class="text-black transition duration-100 hover:text-blue-500 active:text-gray-600">
                 <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
@@ -987,27 +906,22 @@
             </div>
             <!-- social - end -->
           </div>
-
           <!-- nav - start -->
           <div>
             <div class="font-philosopher mb-4 font-bold uppercase tracking-widest text-black">Services</div>
-
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
                   class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Overview</a>
               </div>
-
               <div>
                 <a href="#"
                   class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">How it works</a>
               </div>
-
               <div>
                 <a href="#"
                   class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Pricing</a>
               </div>
-
               <div>
                 <a href="#"
                   class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Customers</a>
@@ -1015,11 +929,9 @@
             </nav>
           </div>
           <!-- nav - end -->
-
           <!-- nav - start -->
           <div>
             <div class="font-philosopher mb-4 font-bold uppercase tracking-widest text-black">Company</div>
-
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
@@ -1036,11 +948,9 @@
             </nav>
           </div>
           <!-- nav - end -->
-
           <!-- nav - start -->
           <div>
             <div class="font-philosopher mb-4 font-bold uppercase tracking-widest text-black">Support</div>
-
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
@@ -1057,24 +967,20 @@
             </nav>
           </div>
           <!-- nav - end -->
-
           <!-- nav - start -->
           <div>
             <div class="font-philosopher mb-4 font-bold uppercase tracking-widest text-black">Legal</div>
-
             <nav class="flex flex-col gap-4">
               <div>
                 <a href="#"
                   class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Terms of
                   Service</a>
               </div>
-
               <div>
                 <a href="#"
                   class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Privacy
                   Policy</a>
               </div>
-
               <div>
                 <a href="#"
                   class="text-black transition duration-100 hover:text-blue-500 active:text-indigo-600">Cookie
@@ -1084,16 +990,13 @@
           </div>
           <!-- nav - end -->
         </div>
-
         <div class="border-t py-8 text-center text-sm text-black">© 2021 - NdoyaiCodes. All rights reserved.</div>
       </div>
     </div>
   </footer>
   <!--Footer-->
-
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-
   <script>
 //smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

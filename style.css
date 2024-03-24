@@ -20,10 +20,3 @@ html, body, .container {
   .font-philosopher {
     font-family: 'Philosopher', sans-serif;
   }
-
-  /* Initial state of the feature components */
-.feature-component {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.s ease;
-}
